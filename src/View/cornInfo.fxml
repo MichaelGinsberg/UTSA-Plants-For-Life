@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DAF7A6 #DAF7A6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.cropInfoController">
+   <children>
+      <ImageView fx:id="cropImage" fitHeight="200.0" fitWidth="298.0" layoutX="14.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Ears-corn.png" />
+         </image></ImageView>
+      <VBox alignment="CENTER" layoutX="300.0" layoutY="58.0" prefHeight="284.0" prefWidth="298.0">
+         <children>
+            <Label fx:id="recommendedFertalizer" text="Recommended Fertalizer: &#10;All Purpose" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeToHarvest" text="Average Time To Harvest: &#10;3.5 Months" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="irrigationSchedule" text="Recommended Irrigation Schedule: &#10;Twice a Week" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="plantingSeason" alignment="CENTER" contentDisplay="CENTER" text="Recommeneded Planting Season: &#10;Spring" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" alignment="CENTER" layoutX="269.0" layoutY="351.0" mnemonicParsing="false" onAction="#backButtonPressed" style="-fx-background-color: #FFCF5A #FFCF5A;" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="cropName" layoutX="212.0" layoutY="14.0" text="Crop Name: Corn">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

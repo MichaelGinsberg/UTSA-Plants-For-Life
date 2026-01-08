@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="600.0" style="-fx-background-color: #DAF7A6;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.fieldOverviewController">
+   <children>
+      <Label fx:id="fieldOverviewLabel" layoutX="226.0" layoutY="14.0" text="Field Overview" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentCropsLabel" layoutX="386.0" layoutY="52.0" text="Current Crops In Field:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="toDoListListView" layoutX="26.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="currentCropsListView" layoutX="374.0" layoutY="86.0" prefHeight="150.0" prefWidth="200.0" />
+      <Button fx:id="addButton" layoutX="390.0" layoutY="245.0" mnemonicParsing="false" onAction="#addButtonPressed" style="-fx-background-color: #FFCF5A;" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeButton" layoutX="474.0" layoutY="245.0" mnemonicParsing="false" onAction="#removeButtonPressed" style="-fx-background-color: #FFCF5A;" text="Remove">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewCropInfoButton" layoutX="378.0" layoutY="290.0" mnemonicParsing="false" onAction="#viewCropInfoButton" style="-fx-background-color: #FFCF5A;" text="View Crop Information">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="260.0" layoutY="329.0" mnemonicParsing="false" onAction="#logoutButtonPressed" style="-fx-background-color: #FFCF5A;" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="46.0" layoutY="52.0" prefHeight="27.0" prefWidth="160.0" text="Weekly checklist:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="39.0" layoutY="93.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="175.0" text="Water each of your plants" />
+      <CheckBox layoutX="39.0" layoutY="111.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="175.0" text="Check on the condition&#10;of your plant's soil" />
+      <CheckBox layoutX="39.0" layoutY="150.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="175.0" text="Check crops for signs of&#10;pests or animals" />
+      <CheckBox layoutX="39.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="175.0" text="Check if plants are getting &#10;enough sunlight" />
+      <Label layoutX="229.0" layoutY="396.0" text="Plant Tip of the Day:" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="39.0" layoutY="423.0" prefHeight="27.0" prefWidth="508.0" text="• Don't throw out your egg shells and coffee ground!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="39.0" layoutY="450.0" prefHeight="30.0" prefWidth="508.0" text="• Mix them together and pour over your soil.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="39.0" layoutY="480.0" prefHeight="54.0" prefWidth="537.0" text="• Lastly, add water over the mixture to see your plants grow faster!" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="25.0" layoutY="284.0" prefHeight="30.0" prefWidth="203.0" text="*Check off tasks you have completed" />
+   </children>
+</Pane>
